@@ -1,0 +1,225 @@
+/*agregar fonts */
+@font-face {
+    font-family: zh;
+    src: url(fonts/zh-cn.ttf);
+  }
+@font-face {
+    font-family: DosisExtraBold;
+    src: url(fonts/Dosis-ExtraBold.ttf);
+}
+@font-face {
+    font-family: DosisRegular;
+    src: url(fonts/Dosis-Regular.ttf);
+}
+@font-face {
+    font-family: DosisLight;
+    src: url(fonts/Dosis-Light.ttf);
+}
+/*textos y fondos */
+body {
+    background-image: url(imagenes/background7v2.png);
+    background-color: #240000; /* Usar si imagen no disponible*/
+    height: 500px; /* Altura */
+    background-repeat: no-repeat; /* No repetir */
+    background-size: cover; /* Auto-rellenar */
+  }
+.body2 {
+    background-image: url(imagenes/img2.png);
+    background-color: #240000; /* Usar si imagen no disponible*/
+    height: 500px; /* Altura */
+    background-repeat: no-repeat; /* No repetir */
+    background-size: cover; /* Auto-rellenar */
+  }
+  h1 {
+    color: rgb(255, 255, 255);
+    font-family: zh;
+    text-align: center;
+  }
+  .titulo {
+    color: rgb(255, 255, 255);
+    font-family: zh;
+    text-align: center;
+    font-size:220%;
+  }
+  h2 {
+    color: rgb(255, 255, 255);
+    font-family: DosisExtraBold;
+    text-align: center;
+  }
+  .titulonews {
+    color: rgb(255, 255, 255);
+    font-family: DosisExtraBold;
+    text-align: left;
+    font-size:150%;
+    padding-top: 10px;
+  }
+  h3 {
+    color: rgb(255, 255, 255);
+    font-family: DosisRegular;
+    text-align: center;
+  }
+  p {
+    color: rgb(255, 255, 255);
+    font-family: DosisLight;
+    font-size: large;
+    padding-left: 25px;
+  }
+/*navbar */
+ .nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: DosisRegular;
+    overflow: hidden;
+    border: 1px solid #640000;
+    border-radius: 5px;
+    background-color: #1f0000;
+  }
+  
+ .nav li {
+    float: none;
+    display:inline-block;
+  }
+  /*navbar normal*/
+  .nav li a {
+    display: block;
+    color: rgb(133, 133, 133);
+    text-align: center;
+    font-family: DosisRegular;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition:.5s;
+  }
+  /*navbar cuando pasas el cursor por encima*/
+  .nav li a:hover:not(.active) {
+    background-color: #ddd;
+    color: #1f0000;
+    border-radius: 5px;
+    transition:.5s;
+  }
+  /*navbar cuando estás en cierta página */
+  .nav li a.active {
+    color: white;
+    background-color: #d40000;
+    border-radius: 5px;
+  }
+  /*centar texto eje y navbar */
+  .centrar {
+    margin-top: 10px;
+  }
+/*Aplicar formatos al logotipo */
+  .logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 250px;
+    text-align: center;
+  }
+  .logo2{
+    display: block;
+    width: 46px;
+    height: 46px;
+    border-radius: 5%;
+    overflow: hidden;
+    margin-top: -6px;
+  }  
+  .logo3{
+    display: block;
+    width: 550px;
+    height: 700px;
+    border-radius: 5%;
+    overflow: hidden;
+  } 
+/*Aplicar formatos a iconos de Twitter e Instagram*/
+  .webicon{
+    margin-left: 30px;
+    margin-right: auto;
+    width: 64px;
+    height: 64px;
+    border-radius: 5px;
+    text-align: left;
+  }
+/*página de imágenes */
+.gallery {
+  border: 3px solid #b84300;
+  border-radius: 5px;
+}
+
+.gallery:hover { /*imagenes de la galería al pasar cursor por encima*/
+  border: 3px solid #b84300;
+  border-radius: 5px;
+}
+
+.gallery img { /*propiedades de las imágenes de la galería*/
+  width: 100%;
+  height: auto;
+}
+
+.desc { /*propiedades de los marcos de las imágenes en la galería*/
+  padding: 15px;
+  text-align: center;
+  font-family: DosisExtraBold;
+  color:white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) { /*usar en pantallas de  menos de 700px*/
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) { /*usar en pantallas de menos de 500px*/
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*tabla de página de precios */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 5px;
+  border: 10px #9000d3
+}
+th {
+  background-color: rgb(126, 0, 0);
+  color: white;
+  font-family: DosisExtraBold;
+  border-collapse: collapse;
+}
+td{
+  font-family: DosisLight;
+  border-radius: 6px;
+}
+th, td {
+  padding: 8px;
+  text-align: center;
+  border: 5px #ddd;
+  color: white;
+}
+
+tr:hover {background-color: rgb(221, 59, 0);}
+caption{
+  font-family: zh;
+  padding-bottom: 5px;
+  padding-top: 10px;
+  color:white;
+}
