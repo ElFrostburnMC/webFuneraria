@@ -81,7 +81,7 @@ body {
     float: none;
     display:inline-block;
   }
-  /*navbar normal*/
+  /* propiedades del texto en la navbar normal (sin pasar el cursor ni estar en la página actual)*/
   .nav li a {
     display: block;
     color: rgb(133, 133, 133);
@@ -143,35 +143,36 @@ body {
   }
 /*página de imágenes */
 .gallery {
-  border: 3px solid #b84300;
+  border: 5px solid #b84300;
   border-radius: 5px;
+  box-sizing: border-box;
 }
 
 .gallery:hover { /*imagenes de la galería al pasar cursor por encima*/
-  border: 3px solid #b84300;
+  border: 5px solid #ff5e00;
   border-radius: 5px;
 }
 
 .gallery img { /*propiedades de las imágenes de la galería*/
   width: 100%;
   height: auto;
-}
-
-.desc { /*propiedades de los marcos de las imágenes en la galería*/
-  padding: 15px;
-  text-align: center;
-  font-family: DosisExtraBold;
-  color:white;
-}
-
-* {
   box-sizing: border-box;
 }
 
-.responsive {
+.desc { /*propiedades del texto encuadrado en los marcos de las imágenes en la galería*/
+  padding: 15px;
+  text-align: center;
+  font-family: DosisExtraBold;
+  box-sizing: border-box;
+  color:white;
+}
+
+.responsive { /*posición de las imágenes de la galería*/
   padding: 0 6px;
+  padding-top: 5px;
   float: left;
   width: 24.99999%;
+  box-sizing: border-box;
 }
 
 @media only screen and (max-width: 700px) { /*usar en pantallas de  menos de 700px*/
@@ -187,12 +188,11 @@ body {
   }
 }
 
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 /*tabla de página de precios */
+.tablespacing { /*espacio entre tabla y borde de página*/
+padding-left: 10px;
+padding-right: 10px;
+}
 table {
   border-collapse: collapse;
   width: 100%;
@@ -216,10 +216,16 @@ th, td {
   color: white;
 }
 
-tr:hover {background-color: rgb(221, 59, 0);}
+tr:hover {background-color: rgb(221, 59, 0);} /*colorear tabla al pasar el cursor*/
 caption{
   font-family: zh;
   padding-bottom: 5px;
   padding-top: 10px;
   color:white;
+}
+.marqueefinal {
+  border:RED 3px SOLID;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  font-family:DosisLight;
 }
