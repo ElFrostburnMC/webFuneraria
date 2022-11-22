@@ -19,7 +19,7 @@
 body {
     background-image: url(imagenes/background7v2.png);
     background-color: #240000; /* Usar si imagen no disponible*/
-    height: 500px; /* Altura */
+    /*no usar height: 500px; ya que da problemas con este fondo en pantallas de menos de 1080p*/ 
     background-repeat: no-repeat; /* No repetir */
     background-size: cover; /* Auto-rellenar */
   }
