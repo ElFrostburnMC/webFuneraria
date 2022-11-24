@@ -86,6 +86,7 @@ body {
     display: block;
     color: rgb(133, 133, 133);
     text-align: center;
+    border-radius: 5px;
     font-family: DosisRegular;
     padding: 14px 16px;
     text-decoration: none;
