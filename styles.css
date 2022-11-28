@@ -149,21 +149,18 @@ p {
   box-sizing: border-box;
 }
 
-.gallery:hover {
-  /*imagenes de la galería al pasar cursor por encima*/
+.gallery:hover {   /*imagenes de la galería al pasar cursor por encima*/
   border: 5px solid #ff5e00;
   border-radius: 5px;
 }
 
-.gallery img {
-  /*propiedades de las imágenes de la galería*/
+.gallery img {   /*propiedades de las imágenes de la galería*/
   width: 100%;
   height: auto;
   box-sizing: border-box;
 }
 
-.desc {
-  /*propiedades del texto encuadrado en los marcos de las imágenes en la galería*/
+.desc {   /*propiedades del texto encuadrado en los marcos de las imágenes en la galería*/
   padding: 15px;
   text-align: center;
   font-family: DosisExtraBold;
@@ -171,8 +168,7 @@ p {
   color: white;
 }
 
-.responsive {
-  /*posición de las imágenes de la galería*/
+.responsive {   /*posición de las imágenes de la galería*/
   padding: 0 6px;
   padding-top: 5px;
   float: left;
@@ -180,24 +176,21 @@ p {
   box-sizing: border-box;
 }
 
-@media only screen and (max-width: 700px) {
-  /*usar en pantallas de  menos de 700px*/
+@media only screen and (max-width: 700px) {   /*usar en pantallas de  menos de 700px*/
   .responsive {
     width: 49.99999%;
     margin: 6px 0;
   }
 }
 
-@media only screen and (max-width: 500px) {
-  /*usar en pantallas de menos de 500px*/
+@media only screen and (max-width: 500px) {   /*usar en pantallas de menos de 500px*/
   .responsive {
     width: 100%;
   }
 }
 
 /*tabla de página de precios */
-.tablespacing {
-  /*espacio entre tabla y borde de página*/
+.tablespacing {   /*espacio entre tabla y borde de página*/
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -217,17 +210,16 @@ td {
   font-family: DosisLight;
   border-radius: 6px;
 }
-th,
-td {
+th, td {
   padding: 8px;
   text-align: center;
   border: 5px #ddd;
   color: white;
 }
 
-tr:hover {
+tr:hover { /*colorear tabla al pasar el cursor*/
   background-color: rgb(221, 59, 0);
-} /*colorear tabla al pasar el cursor*/
+}
 caption {
   font-family: zh;
   padding-bottom: 5px;
